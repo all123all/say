@@ -14,6 +14,10 @@ app.get('/form', function(req, res){
 app.get('/done', function(req, res) {
     res.sendFile(__dirname + '/views/html/done.html')
 });
+app.get('/index', function(req, res) {
+    Post.findAll()
+    res.sendFile(__dirname + '/views/html/index.html')
+});
 app.post('/main', function(req, res){
     Post.create({
         postMadeBy: req.body.userEmail,

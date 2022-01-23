@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digite sua mensagem</title>
+    <title>Write your message</title>
     <style>
         body {
             display: flexbox;
@@ -77,7 +77,7 @@
         <p>We'll tell you when somebody like your message</p>
         <form action="main" class="form" method="post">
             <input type="text" id="userEmail" name="userEmail" placeholder="Email"><br>
-            <textarea name="postContent" id="postContent" cols="80" rows="7" placeholder="Write a gentle message for whom may need a hug in this moment"></textarea><br> 
+            <textarea name="postContent" id="postContent" cols="80" rows="7" maxlength="1000" placeholder="Write a gentle message for whom may need a hug in this moment"></textarea><br> 
             <button type="submit" value="Submit" id="submitButton">Submit</button>
         </form>
     </div>
