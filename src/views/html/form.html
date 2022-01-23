@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digite sua mensagem</title>
+    <style>
+        body {
+            display: flexbox;
+            background: #000;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background: url('https://i.pinimg.com/originals/cf/ec/88/cfec8819d8376a57c86e3c6e53ed618e.gif');
+        }
+        h1 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+        }
+        #formDiv {
+            display: flexbox;
+            flex-direction: row;
+        }
+        #postContent {
+            width: 20%;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border-width: 1px;
+            border-color: #696969;
+        }
+        #userEmail {
+            width: 20%;
+            height: 40px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border-width: 1px;
+            border-color: #696969;
+        }
+        #userPassword {
+            width: 20%;
+            height: 40px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border-width: 1px;
+            border-color: #696969;
+        }
+        #submitButton {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: #008CBA;
+            width: 20%;
+            border-radius: 10px;
+        }
+        .imgForm {
+            flex: 1;
+        }
+        .form {
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="body">
+    <div id="formDiv">
+        <img class="imgForm" src="https://www.pngall.com/wp-content/uploads/5/Friendship-Day-PNG-Pic.png" alt="Girl in a jacket" width="300" height="200">
+        <h1>Leave a gentle message</h1>
+        <p>We'll tell you when somebody like your message</p>
+        <form action="main" class="form" method="post">
+            <input type="text" id="userEmail" name="userEmail" placeholder="Email"><br>
+            <textarea name="postContent" id="postContent" cols="80" rows="7" placeholder="Write a gentle message for whom may need a hug in this moment"></textarea><br> 
+            <button type="submit" value="Submit" id="submitButton">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
