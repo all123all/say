@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Say</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script>
+        var template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
+        console.log(template({ doesWhat: "rocks!" }));
+    </script>
     <style>
         body {
             display: flexbox;
             background: #000;
             background: url('https://i.pinimg.com/originals/cf/ec/88/cfec8819d8376a57c86e3c6e53ed618e.gif');
-        }
-        .cardsContainer {
-            /* display: inline-block; */
         }
         .card {            
             flex-direction: column;

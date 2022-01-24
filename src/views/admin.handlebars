@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say</title>
+    <style>
+        body {
+            display: flexbox;
+            background: #000;
+            background: url('https://i.pinimg.com/originals/cf/ec/88/cfec8819d8376a57c86e3c6e53ed618e.gif');
+        }
+        .card {            
+            flex-direction: column;
+            background: #fff;
+            margin-top: 15px;
+            margin-left: 35px;
+            width: 40%;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            padding-left: 15px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }
+        .title {
+            font-weight: bold;
+            color: #858585;
+        }
+        .adminPanelTitle {
+            color: brown;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .deleteButton {
+            border: none;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: brown;
+            width: 30%;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            height: 40px;
+            margin-top: 10px;
+            margin-bottom: 15px;            
+        }
+        .deleteButton:hover{
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="adminPanelTitleView">
+        <h1 class="adminPanelTitle">***Admin panel***</h1>
+    </div>
+    <div class="cardsContainer">
+        {{#each posts}}
+            <div class="card">
+                {{!-- Line below shows the user that made the post --}}
+                {{!-- <p class="title"> {{dataValues.postMadeBy}} </p> --}}
+                <p class="title">Anonymous</p>
+                <p class="content"> {{dataValues.postContent}} </p>
+                <a href="/delete/{{dataValues.id}}"><button class="deleteButton">Delete</button></a>
+            </div>
+        {{/each}}
+    </div>    
+</body>
+</html>

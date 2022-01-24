@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say</title>
+    <style>
+        body {
+            display: flexbox;
+            background: #000;
+            background: url('https://i.pinimg.com/originals/cf/ec/88/cfec8819d8376a57c86e3c6e53ed618e.gif');
+        }
+        .card {            
+            flex-direction: column;
+            background: #fff;
+            margin-top: 15px;
+            margin-left: 35px;
+            width: 40%;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            padding-left: 15px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }
+        .GeeksForGeeks {
+            text-align: center;
+            background: dodgerblue;
+            top: 50%;
+            left: 1%;
+            right: 1%;
+        }
+        .title{
+            font-weight: bold;
+            color: #858585;
+        }
+    </style>
+</head>
+<body>
+    <div class="cardsContainer">
+
+        {{#each posts}}
+            <div class="card">
+                {{!-- Line below shows the user that made the post --}}
+                {{!-- <p class="title"> {{dataValues.postMadeBy}} </p> --}}
+                <p class="title">Anonymous</p>
+                <p class="content"> {{dataValues.postContent}} </p>
+            </div>
+        {{/each}}
+    </div>    
+</body>
+</html>
