@@ -8,5 +8,10 @@
   The user should clone the repository from GitHub and download Node. Others libs you'll may need: Sequelize, Handlebars, ExpressJS and Body-Parser.
   Just clone the repository, install the libs i said, do a `cd src/` and run `node app.js`.
 
+  ## Screenshots
+  <img src="./screenshots/index1.png">
+  <img src="./screenshots/index2.png">
+  <img src="./screenshots/index3.png">
+
   ## Contact me
   If you want to know more about me or the projects i'm working on you can contact me on allyson2308h@gmail.com. You can view more of my projects at                   https://github.com/all123all.
